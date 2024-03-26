@@ -33,8 +33,9 @@
     nav
         width: 90%
         a
+            min-width: 190px
             font-size: 18px
-            padding: 13px 20px
+            padding: 13px 20px 12px
 
     .contract
         margin-bottom: 20px
@@ -69,6 +70,10 @@
         display: block
         max-width: 19%
         max-height: 40px
+        transition: all ease .3s
+        
+        &:hover
+            transform: scale(1.1)
 
     @media screen and ( max-width: 1000px )
         padding: 15vw 3vw 0
