@@ -1,0 +1,86 @@
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    border: none
+    outline: none
+
+html
+    scroll-behavior: smooth
+
+body
+    min-height: 100vh
+    color: white
+    background-color: #000
+    font-family: sans-serif
+    // background-image: url('../img/bg.jpg')
+    background-repeat: no-repeat
+    background-position: bottom top
+    background-size: 100% auto 
+    &.active
+        overflow: hidden
+
+img
+    max-width: 100%
+
+a,
+button
+    display: inline-block
+    text-decoration: none
+    transition: all ease .2s
+    background-color: transparent
+    &:active
+        transform: scale(.98)
+
+    img
+        display: block
+
+    &:hover
+        transform: scale(1.1)
+
+.btn
+
+    display: block
+    font-size: 0
+    max-width: 320px
+    position: relative
+    z-index: 1
+
+    img
+        display: block
+
+
+.fx
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+.contract
+    width: max-content
+    max-width: 90%
+    display: inline-block
+    font-size: 20px
+    font-style: normal
+    font-weight: 500
+    line-height: 150%
+    border: 1px solid rgba(#fff, .5)
+    padding: 14px 62px 14px 22px
+    text-align: center
+    border-radius: 40px
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
+    background-color: rgba(#000, .05)
+    background-color: rgba(182, 76, 181, .1)
+    backdrop-filter: blur(15px)
+    color: #fff
+    margin-bottom: 20px
+    img
+        width: 22px
+        display: inline-block
+        vertical-align: middle
+        margin-left: 10px
+        position: absolute
+        right: 22px
+        top: 50%
+        transform: translateY(-50%)

@@ -1,0 +1,140 @@
+@import 'normolize'
+// @import 'fonts'
+@import 'elements'
+
+.logo
+    position: absolute
+    top: -10%
+    left: 0
+    width: 100%
+    height: 100%
+    object-fit: contain
+    object-position: center center
+    z-index: -11
+
+.main
+    background-repeat: no-repeat
+    background-position: center top
+    background-image: url('../img/main.jpg')
+    background-size: cover
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-align: center
+    justify-content: flex-end
+    position: relative
+    z-index: 1
+    min-height: 100vh
+    padding-bottom: 3vw
+
+    .contract
+        margin-bottom: 20px
+
+    .soc
+        gap: 20px
+        a
+            padding: 20px
+            border-radius: 20px
+            &:hover
+                background-color: rgba(255, 255, 255, 0.05)
+
+        img
+            display: block
+            max-width: 55px
+
+.partners
+    padding: 5vw 10vw 0
+    img
+        display: block
+        max-width: 19%
+        max-height: 40px
+
+.krak
+    position: relative
+    z-index: 1
+    min-height: 100vh
+    // min-height: 56.25vw
+    flex-direction: column
+    justify-content: center
+    overflow: hidden
+    .logo
+        top: 0
+        opacity: .3
+
+    &-paw
+        position: absolute
+        max-width: 35%
+        z-index: 1
+        max-height: 45%
+
+    .headline
+        width: 500px
+        max-width: 70%
+
+    .about
+        width: 900px
+        max-width: 90%
+
+    .lt
+        top: 0
+        left: -5%
+
+    .lb
+        left: -5%
+        bottom: 0
+
+    .rt
+        top: 0
+        right: -5%
+
+    .rb
+        bottom: -5%
+        right: -5%
+
+.tk
+    flex-direction: column
+    justify-content: center
+    position: relative
+    top: -4vw
+    .head
+        width: 400px
+        max-width: 50%
+        margin-bottom: 5vw
+
+    .cnt
+        max-width: 80%
+
+.footer
+    position: relative
+    z-index: 1
+    overflow: hidden
+    min-height: 50vh
+    background-repeat: no-repeat
+    // background-size: 115% auto 
+    background-position: center bottom
+    background-image: url('../img/footer.jpg')
+    padding-top: 10vw
+    align-items: flex-end
+    padding: 10vw 5vw 2vw
+    &-img 
+        max-width: 20vw
+        max-height: 100px
+        &.dis 
+            max-width: 30vw
+            max-height: unset
+            position: absolute
+            left: 50%
+            transform: translateX(-50%)
+
+    .foot
+        position: absolute
+        z-index: -1
+        bottom: -40%
+        max-width: 30vw
+
+    .lb
+        left: -15%
+        bottom: -30%
+        max-width: 50vw
+    .rb
+        right: -5%
