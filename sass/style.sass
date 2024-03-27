@@ -28,7 +28,7 @@
     padding: 3vw 0 2vw
     overflow: hidden
 
-    .bottom 
+    .bottom
         width: 100%
 
     nav
@@ -57,13 +57,29 @@
             max-width: 55px
 
     @media screen and ( max-width: 1000px )
-        nav
-            flex-direction: column
-            margin-bottom: 5px
-            a
-                font-size: 15px
-                padding: 10px 15px
+        padding: 0 0 10vw
 
+        nav
+            // flex-direction: column
+            width: 100%
+            margin-bottom: 5px
+            border-bottom: 1px solid rgba(#fff, .1)
+            background-color: rgba(#000, .05)
+            background-color: rgba(182, 76, 181, .1)
+            backdrop-filter: blur(15px)
+            justify-content: flex-start
+            padding: 10px
+            gap: 10px
+            a
+                font-size: 14px
+                padding: 8px 20px 7px
+                filter: none
+                min-width: unset
+                border: none
+                margin: 0 !important
+                &:last-of-type
+                    margin-left: auto !important
+                    border: 1px solid rgba(#fff, .5)
 
 .partners
     padding: 5vw 10vw 0
@@ -72,7 +88,7 @@
         max-width: 19%
         max-height: 40px
         transition: all ease .3s
-        
+
         &:hover
             transform: scale(1.1)
 
@@ -133,9 +149,9 @@
         bottom: -5%
         right: -5%
 
-.bg 
+.bg
     background-repeat: no-repeat
-    background-position: center top 
+    background-position: center top
     background-repeat: no-repeat
     background-size: cover
     background-image: url('../img/footer-s.jpg')
@@ -191,4 +207,3 @@
             max-height: 100px
             &.dis
                 max-width: 90%
-
