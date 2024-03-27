@@ -7,58 +7,61 @@
     <title>Kraken</title>
     <meta name="theme-color" content="#762aa5" />
     <!-- <link rel="shortcut icon" href="favicon.png" type="image/png"> -->
-    <link rel="stylesheet" href="./css/style.css?ver=4">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/aos.css">
 
 </head>
 
 <body>
     <main class="main">
         <nav class="fx">
-            <a href="#" target="_blank" class="contract">About</a>
-            <a href="#" target="_blank" class="contract">Tokenomics</a>
-            <a href="#" target="_blank" class="contract">Buy</a>
+            <a href="#" target="_blank" data-aos="fade-right" data-aos-offset="0" class="contract">About</a>
+            <a href="#" target="_blank" data-aos="fade-down" data-aos-delay="100" data-aos-offset="0"
+                class="contract">Tokenomics</a>
+            <a href="#" target="_blank" data-aos="fade-left" data-aos-offset="0" class="contract">Buy</a>
         </nav>
         <img src="img/logo.png" class="logo" alt="logo">
         <div class="bottom">
-            <button class="contract" onclick="copyText()"
+            <button class="contract" data-aos="fade-up" data-aos-delay="400" onclick="copyText()"
                 data-copy="9AQEJ2i8AZhzqUaSaeDUWqpfvY7i1sGoudpU64xtQXnN">
                 9AQEJ2i8AZhzqUaSaeDUWqpfvY7i1sGoudpU64xtQXnN
                 <img src="img/ic-copy.svg" alt="copy">
             </button>
             <div class="fx soc">
-                <a href="#" target="_blank"><img src="img/tg.png" alt="tg"></a>
-                <a href="#" target="_blank"><img src="img/sk.png" alt="tg"></a>
-                <a href="#" target="_blank"><img src="img/x.png" alt="tg"></a>
+                <a href="#" data-aos="fade-up" data-aos-delay="100" target="_blank"><img src="img/tg.png" alt="tg"></a>
+                <a href="#" data-aos="fade-up" data-aos-delay="200" target="_blank"><img src="img/sk.png" alt="tg"></a>
+                <a href="#" data-aos="fade-up" data-aos-delay="300" target="_blank"><img src="img/x.png" alt="tg"></a>
             </div>
         </div>
     </main>
 
     <div class="partners fx">
-        <img loading="lazy" src="img/cmc.png" alt="ig">
-        <img loading="lazy" src="img/dex.png" alt="ig">
-        <img loading="lazy" src="img/sol.png" alt="ig">
-        <img loading="lazy" src="img/screener.png" alt="ig">
-        <img loading="lazy" src="img/ray.png" alt="ig">
+        <img loading="lazy" data-aos="fade-up" src="img/cmc.png" alt="ig">
+        <img loading="lazy" data-aos="fade-up" data-aos-delay="100" src="img/dex.png" alt="ig">
+        <img loading="lazy" data-aos="fade-up" data-aos-delay="200" src="img/sol.png" alt="ig">
+        <img loading="lazy" data-aos="fade-up" data-aos-delay="300" src="img/screener.png" alt="ig">
+        <img loading="lazy" data-aos="fade-up" data-aos-delay="400" src="img/ray.png" alt="ig">
     </div>
 
     <div class="krak fx">
         <img loading="lazy" src="img/logo.png" class="logo" alt="logo">
 
-        <img loading="lazy" src="img/l-t.png" class="krak-paw lt" alt="i">
-        <img loading="lazy" src="img/l-b.png" class="krak-paw lb" alt="i">
-        <img loading="lazy" src="img/r-t.png" class="krak-paw rt" alt="i">
-        <img loading="lazy" src="img/r-b.png" class="krak-paw rb" alt="i">
+        <img loading="lazy" data-aos="fade-right" src="img/l-t.png" class="krak-paw lt" alt="i">
+        <img loading="lazy" data-aos="fade-right" data-aos-delay="100" src="img/l-b.png" class="krak-paw lb" alt="i">
+        <img loading="lazy" data-aos="fade-left" data-aos-delay="200" src="img/r-t.png" class="krak-paw rt" alt="i">
+        <img loading="lazy" data-aos="fade-left" data-aos-delay="300" src="img/r-b.png" class="krak-paw rb" alt="i">
 
-        <img loading="lazy" src="img/headline.png" class="headline" alt="i">
-        <img loading="lazy" src="img/about.png" class="about" alt="i">
+        <img loading="lazy" data-aos="fade-up" src="img/headline.png" class="headline" alt="i">
+        <img loading="lazy" data-aos="fade-up" data-aos-delay="200" src="img/about.png" class="about" alt="i">
 
     </div>
 
 
     <div class="bg">
         <div class="tk fx">
-            <img loading="lazy" src="img/tk.png" class="head" alt="i">
-            <img loading="lazy" src="img/tks.png" class="cnt" alt="i">
+            <img loading="lazy" data-aos="fade-up" src="img/tk.png" class="head" alt="i">
+            <img loading="lazy" data-aos="fade-up" data-aos-delay="200" src="img/tks.png" class="cnt" alt="i">
         </div>
 
         <footer class="footer fx">
@@ -68,9 +71,13 @@
         </footer>
     </div>
 
+    <script src="./js/aos.js"></script>
     <script>
+        AOS.init({
+            duration: 600,
+        });
         function copyText() {
-            var button = document.querySelector('.contract');
+            var button = document.querySelector('[data-copy]');
             var dataToCopy = button.getAttribute('data-copy');
             navigator.clipboard.writeText(dataToCopy)
                 .then(function () { alert('Text copied: ' + dataToCopy); })
