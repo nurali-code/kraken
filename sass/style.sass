@@ -90,7 +90,10 @@
         transition: all ease .3s
 
         &:hover
-            transform: scale(1.1)
+            &:hover
+                transition-duration: .3s !important
+                transition-delay: 0s !important
+                transform: scale(1.1) !important
 
     @media screen and ( max-width: 1000px )
         padding: 15vw 3vw 0
@@ -157,10 +160,10 @@
     background-image: url('../img/footer-s.jpg')
 
 .tk
+    padding-top: 4vw
     flex-direction: column
     justify-content: center
     position: relative
-    padding-bottom: 4vw
     .head
         width: 500px
         max-width: 70%

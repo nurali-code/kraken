@@ -37,7 +37,9 @@ button
         display: block
 
     &:hover
-        transform: scale(1.1)
+        transition-duration: .3s !important
+        transition-delay: 0s !important
+        transform: scale(1.1) !important
 
 .btn
 
@@ -63,18 +65,19 @@ button
     font-style: normal
     font-weight: 500
     line-height: 150%
-    border: 1px solid rgba(#fff, .5)
     padding: 14px 62px 14px 22px
     text-align: center
     border-radius: 40px
     white-space: nowrap
     overflow: hidden
     text-overflow: ellipsis
+    border: 1px solid rgba(#fff, .5)
     background-color: rgba(#000, .05)
     background-color: rgba(182, 76, 181, .1)
     backdrop-filter: blur(15px)
     color: #fff
     margin-bottom: 20px
+    transition-delay: 0s !important
     img
         width: 22px
         display: inline-block
@@ -84,3 +87,6 @@ button
         right: 22px
         top: 50%
         transform: translateY(-50%)
+
+    &:hover
+        transform: scale(1.1) !important
