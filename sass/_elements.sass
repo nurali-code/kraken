@@ -59,13 +59,14 @@ button
 
 .contract
     width: max-content
+    min-width: 190px
     max-width: 90%
     display: inline-block
     font-size: 20px
     font-style: normal
     font-weight: 500
     line-height: 150%
-    padding: 14px 62px 14px 22px
+    padding: 14px 22px
     text-align: center
     border-radius: 40px
     white-space: nowrap
@@ -78,6 +79,9 @@ button
     color: #fff
     margin-bottom: 20px
     transition-delay: 0s !important
+    &[data-copy]
+        padding: 14px 62px 14px 22px
+
     img
         width: 22px
         display: inline-block
