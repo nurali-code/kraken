@@ -8,7 +8,7 @@
     <meta name="theme-color" content="#762aa5" />
     <!-- <link rel="shortcut icon" href="favicon.png" type="image/png"> -->
     <link rel="stylesheet" href="fonts/stylesheet.css">
-    <link rel="stylesheet" href="./css/style.css?ver=22">
+    <link rel="stylesheet" href="./css/style.css?ver=28">
     <link rel="stylesheet" href="css/aos.css">
 
 </head>
@@ -20,18 +20,23 @@
             <a href="#tokenomics" data-aos="fade-down" data-aos-delay="100" data-aos-offset="0"
                 class="contract">Tokenomics</a>
             <a href="#" data-aos="fade-down" data-aos-delay="200" data-aos-offset="0" class="contract">NFT</a>
-            <a href="#" data-aos="fade-left" data-aos-offset="0" class="contract">Buy</a>
+            <a href="#" draggable data-aos="fade-down" data-aos-delay="100" data-aos-offset="0"
+                class="contract">Geocaching</a>
+            <a href="https://jup.ag/swap/SOL-KRAKEN_A7rCWbzUD22fUpv3N8f6tfjhMBHFCMAND7g8ViM2ieJh" target="_blank"
+                data-aos="fade-left" data-aos-offset="0" class="contract">Buy</a>
         </nav>
         <img src="img/logo.png" class="logo" alt="logo">
         <div class="bottom">
-            <a href="#" class="contract" data-aos="fade-up" data-aos-delay="400">
-                Join
-            </a>
+            <button class="contract" data-aos="fade-up" onclick="copyText()"
+                data-copy="A7rCWbzUD22fUpv3N8f6tfjhMBHFCMAND7g8ViM2ieJh" data-aos-delay="400">
+                A7rCWbzUD22fUpv3N8f6tfjhMBHFCMAND7g8ViM2ieJh
+                <img src="img/ic-copy.svg" alt="ic">
+            </button>
             <div class="fx soc">
                 <a href="https://t.me/thekrakencoin" data-aos="fade-up" data-aos-offset="0" data-aos-delay="100"
                     target="_blank"><img src="img/tg.png" alt="tg"></a>
-                <a href="#" data-aos="fade-up" data-aos-offset="0" data-aos-delay="200" target="_blank"><img
-                        src="img/sk.png" alt="tg"></a>
+                <a href="https://dexscreener.com/solana/csszhrd4tj17jymqcqj7eyegmdvhp4rhj6n9aeczs1fk" data-aos="fade-up"
+                    data-aos-offset="0" data-aos-delay="200" target="_blank"><img src="img/sk.png" alt="tg"></a>
                 <a href="https://twitter.com/TheKrakenCoin" data-aos="fade-up" data-aos-offset="0" data-aos-delay="300"
                     target="_blank"><img src="img/x.png" alt="tg"></a>
             </div>
@@ -62,6 +67,40 @@
 
     </div>
 
+    <div class="roadmap">
+        <picture>
+            <source media="(min-width: 900px)" srcset="img/road__item.png">
+            <img src="img/road__item-mob.png" class="roadmap__road" loading="lazy" alt="road">
+        </picture>
+        <picture>
+            <source media="(min-width: 900px)" srcset="img/bg__road.jpg">
+            <img src="img/bg__road-mob.jpg" class="roadmap__bg" loading="lazy" alt="road">
+        </picture>
+        <picture>
+            <source media="(min-width: 900px)" srcset="img/stones.png">
+            <img src="img/stones-mob.png" class="roadmap__stones" loading="lazy" alt="road">
+        </picture>
+
+        <ol class="wrap">
+            <li class="item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-offset="0">
+                Listing on DEX <br>
+                The first stage of $KRAKEN. Listing on Solana ecosystem DEX (Raydium, Jupiter).
+            </li>
+            <li class="item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-offset="0">
+                NFT minting <br>
+                Building 444 unique NFTs. Minting RELEASE THE KRAKEN collection. Listing collection on Magic Eden.
+            </li>
+            <li class="item" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0">
+                Geocaching platform and $KRAKEN fund.
+                Building $KRAKEN Geocaching WEB3 platform. Launch the platform and start geocaching all over the world.
+                Launch $KRAKEN charity fund for the protection of World’s Ocean.
+            </li>
+            <li class="item" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0">
+                Listing on CEX <br>
+                Listing RELEASE KRAKEN on CEX
+            </li>
+        </ol>
+    </div>
 
     <div class="bg" id="tokenomics">
         <div class="tk fx">
@@ -71,10 +110,11 @@
 
         <footer class="footer fx">
             <img loading="lazy" class="footer-img" src="img/footer-head.png" alt="logo">
-            <img loading="lazy" class="footer-img dis" src="img/dis.png" alt="logo">
+            <!-- <img loading="lazy" class="footer-img dis" src="img/dis.png" alt="logo"> -->
             <img loading="lazy" class="footer-img" src="img/footer-logo.png" alt="logo">
         </footer>
     </div>
+
 
     <script src="./js/aos.js"></script>
     <script>
